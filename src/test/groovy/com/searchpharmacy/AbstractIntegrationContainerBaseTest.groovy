@@ -6,7 +6,7 @@ import spock.lang.Specification
 
 @SpringBootTest
 class AbstractIntegrationContainerBaseTest extends Specification {
-
+    // mariadb는 application.yml의 testcontainer로 만들지만 redis는 따로 띄워야함
     static final GenericContainer MY_REDIS_CONTAINER
 
     static {
