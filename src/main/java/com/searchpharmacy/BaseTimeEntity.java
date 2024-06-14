@@ -1,4 +1,4 @@
-package com.searchpharmacy.pharmacy;
+package com.searchpharmacy;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
