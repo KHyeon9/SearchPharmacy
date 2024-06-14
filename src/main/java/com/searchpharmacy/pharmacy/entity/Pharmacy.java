@@ -1,6 +1,6 @@
 package com.searchpharmacy.pharmacy.entity;
 
-import com.searchpharmacy.pharmacy.BaseTimeEntity;
+import com.searchpharmacy.BaseTimeEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
