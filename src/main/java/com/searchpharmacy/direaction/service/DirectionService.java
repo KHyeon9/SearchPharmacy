@@ -27,6 +27,7 @@ public class DirectionService {
     private static final double RADIUS_KM = 10; // 반경 10km 내
 
     private final PharmacySearchService pharmacySearchService;
+    private final Base62Service base62Service;
     private final DirectionRepository directionRepository;
     private final KakaoCategorySearchService kakaoCategorySearchService;
 
@@ -35,6 +36,11 @@ public class DirectionService {
         if (CollectionUtils.isEmpty(directionList)) return Collections.emptyList();
 
         return directionRepository.saveAll(directionList);
+    }
+
+    public Direction findById(String encodedId) {
+        Long decodedId = base62Service.decodeDirectionId(encodedId);
+        return directionRepository.findById(decodedId).orElse(null);
     }
 
     public List<Direction> buildDirectionList(DocumentDto documentDto) {
