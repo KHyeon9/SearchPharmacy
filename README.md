@@ -35,8 +35,8 @@
 * 입력한 주소 정보에서 정해진 반경(10km) 내에 있는 약국만 추천 한다.
 * 추출한 약국 데이터는 길안내 URL 및 로드뷰 URL로 제공 한다.
     * ex)
-        길안내 URL : https://map.kakao.com/link/map/우리회사,37.402056,127.108212
-        로드뷰 URL : https://map.kakao.com/link/roadview/37.402056,127.108212
+        - 길안내 URL : https://map.kakao.com/link/map/우리회사,37.402056,127.108212
+        - 로드뷰 URL : https://map.kakao.com/link/roadview/37.402056,127.108212
 * 길안내 URL은 고객에게 제공 되기 때문에 가독성을 위해 shorten url로 제공 한다.
 * shorten url에 사용 되는 key값은 인코딩하여 제공 한다.
      * ex) http://localhost:8080/dir/nqxtX
